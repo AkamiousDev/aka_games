@@ -1,0 +1,300 @@
+/* Estilos Globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografia */
+header, section h2, section h3, form button, a button {
+    font-family: "Bungee", sans-serif;
+    font-weight: normal;
+}
+
+body, input, textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Estilos do Header */
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 56px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Seções */
+section {
+    padding: 24px 0;
+    color: #182c61;
+}
+
+section h2 {
+    margin-bottom: 16px;
+    text-align: center; 
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+/* Listas de Marcas */
+.brands-lists img {
+    height: 24px;
+}
+
+.brands-lists li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Menu */
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.menu li:hover {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Conteúdo */
+.conteudo {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+/* Sobre a Loja */
+.sobre img {
+    max-width: 100%;
+}
+
+.loja {
+    margin-bottom: 56px;
+}
+
+.loja .sobre {
+    display: flex;
+    font-size: 1em;
+}
+
+.loja .sobre img {
+    max-width: 50%;
+    margin-right: 32px;
+}
+
+/* Links Sociais */
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+/* Formulário de Contato */
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.contact-methods div {
+    margin-bottom: 24px; 
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 16px; 
+    padding: 12px; 
+}
+
+form textarea {
+    resize: none;
+    height: 150px; 
+}
+
+form button,
+a button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+    padding: 12px; 
+}
+
+form button:hover {
+    background-color: #334a88;
+}
+
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+/* Footer */
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
+
+/* Jogos */
+.jogos {
+    display: grid;
+    grid-template-columns: repeat(3, 32.6%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+.jogos .sobre a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .conteudo {
+        display: block;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 0 8px;
+    }
+
+    .loja .sobre {
+        display: block;
+        font-size: 1.2em;
+    }
+
+    .loja .sobre img {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .jogos {
+        display: block;
+    }
+
+    .jogos .sobre {
+        margin-bottom: 32px;
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .botao-menu {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .botao-menu {
+        padding: 8px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        padding: 0 16px;
+    }
+
+    .botao-menu {
+        display: none;
+    }
+
+    .loja .sobre {
+        font-size: 1.5em;
+    }
+
+    .jogos {
+        grid-template-columns: repeat(2, 49%);
+        column-gap: 2%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .botao-menu {
+        display: none;
+    }
+
+    .jogos {
+        grid-template-columns: repeat(3, 32.6%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+
+    
+    #contact .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-methods {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .contact-methods div {
+        flex: 1;
+        margin-bottom: 0; 
+    }
+
+    form {
+        max-width: 100%; 
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AkaGames</title>
+    <link rel="stylesheet" href="./main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AkaGames</h1>
+        </div>
+        <div class="botao-menu">
+            <button type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    <a href="#about">Sobre a loja</a>
+                </li>
+                <li>
+                    <a href="#games">Jogos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="loja">
+                <div class="sobre">
+                    <img src="/img/loja.jpg">
+                       <div>
+                        <h2>Sobre a loja</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores reprehenderit molestiae
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur maiores reprehenderit molestiae
+                        </p>
+                        <ul class="brands-lists">
+                            <li>
+                                <img src="./img/nintendo.png" alt="Nintendo">
+                            </li>
+                            <li>
+                                <img src="./img/xbox.png" alt="Xbox">
+                            </li>
+                            <li>
+                                <img src="./img/playstation.png" alt="Playstation">
+                            </li>
+                        </ul>
+                       </div>
+                    </div>
+            </section>
+            <section id="games">
+                <h2>Jogos</h2>
+                <div class="jogos">
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="/img/jogo ps5.jpg" alt="Jogo de PS5">
+                            <h3>XXXXX 2</h3>
+                            <p>
+                                Jogo de Playstation 5
+                            </p>
+                            <div class="price">
+                                <strong>R$ 289,00</strong>
+                            </div>
+                            <button type="button">Comprar</button>
+                        </a>
+                    </article>
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="/img/jogo xbox.jpg" alt="Jogo de Xbox">
+                            <h3>XXXXXX</h3>
+                            <p>
+                                Jogo de Xbox Series X
+                            </p>
+                            <div class="price">
+                                <strong>R$ 259,00</strong>
+                            </div>
+                            <button type="button">Comprar</button>
+                        </a>
+                    </article>
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="/img/jogo nintendo.jpg" alt="Jogo de Switch">
+                        <h3>Super XXXXXX</h3>
+                        <p>
+                            Jogo de Nintendo Switch
+                        </p>
+                        <div class="price">
+                            <strong>R$ 359,00</strong>
+                        </div>
+                        <button type="button">Comprar</button>
+                        </a>
+                    </article>
+                    <article class="sobre">
+                        <a href="#">
+                            <img src="/img/gift ps5.jpg" alt="Gift Card PS5">
+                        <h3>Gift Card - R$ 200,00</h3>
+                        <p>
+                            Gift Card para Playstation 5
+                        </p>
+                        <div class="price">
+                            <strong>R$ 200,00</strong>
+                        </div>
+                        <button type="button">Comprar</button>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="container">
+                    <h2>Contato</h2>
+                    <div class="contact-methods">
+                        <div>
+                            <h3>Fale conosco</h3>
+                            <form action="">
+                                <input type="text" placeholder="Seu nome" required>
+                                <input type="email" placeholder="Seu e-mail" required>
+                                <input type="tel" placeholder="Seu telefone (opcional)">
+                                <textarea placeholder="Sua mensagem" required></textarea>
+                                <button type="submit">Enviar</button>
+                            </form>
+                        </div>
+                        <div>
+                            <h3>Nos acompanhe</h3>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="#" title="Siga-nos no Instagram">
+                                        <img src="./img/instagram.png" alt="logo do Instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Siga-nos no Facebook">
+                                        <img src="./img/facebook.png" alt="logo do Facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Visite nosso canal no Tourube">
+                                        <img src="./img/youtube.png" alt="logo do youtube">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Venha até nós</h3>
+                            <p>
+                                Rua Xxxxxxx n 1425, Xxxxx - Rio de Janeiro - RJ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="container">
+                <p>&copy; AkaGames - Todos os direitos reservados - 2024</p>
+            </div>
+        </footer>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>\
+    <script>
+        $(document).ready(function() {
+            $('.botao-menu button').click(function() {
+                $('.menu').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
